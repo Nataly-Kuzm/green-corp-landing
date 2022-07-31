@@ -224,18 +224,18 @@ header a {
   flex-direction: column-reverse;
     padding: 50px 10px;
 }
-
+ 
 .about h1 {
     font-size: 36px;
     line-height: 40px;
 }
 
-.about__image {
+.about_image {
     width: 280px;
     
 }
 
-.about__sun-image {
+.about_sun-image {
     width: 75px;
     height: 75px;
    
