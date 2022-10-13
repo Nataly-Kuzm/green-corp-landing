@@ -15,8 +15,8 @@
   <header>
     <img class="header__logo" src='img/logo.svg'>
     <div class="header__controls">
-      <a href="#contacts">Контакты</a>
-      <button>Заказать</button>
+      <a href="#form">Контакты</a>
+      <button type="button">Заказать</button>
     </div>
   
   </header>
@@ -25,7 +25,7 @@
     <div class="about_info animate__animated animate__fadeInLeft animate__slow">
         <h1> Солнечные батареи GreenRobotik</h1>
         <p>Производите дешевую экологически чистую электроэнергию из солнечного света</p>
-        <button> Узнать подробнее <span class="icon" ><i class="fas fa-solid fa-chevron-right"></i></span>
+        <button class="more-button" href="#features"> Узнать подробнее <span class="icon" ><i class="fas fa-solid fa-chevron-right"></i></span>
         </button>
        
     </div>
@@ -60,7 +60,8 @@
      <div class="features__feedback">
       <div class="features__feedback-left">
          <h2>Нам доверяет
-          <div> 5000+ счастливых клиентов</div>
+          <br>
+          <div class="features__clients-count"> 5000+</div> счастливых клиентов
          </h2> 
          <p>Мы помогли тысячам людей перейти на зеленую энергию.
           <br>После заказа мы позаботимся обо всем: доставка панелей, проект, установка, помощь в использовании.
@@ -101,8 +102,8 @@
           </div>
         </div>
       </section>
-      <section class="form">
-           <div class="from__container">
+      <section class="form"  id = "form">
+           <div class="form__container">
              <h1>Оставьте свои контакты</h1>
              <p>Поможем подобрать модель.<br> Выбрать удобный вариант доставки и установки.<br> Гарантия возврата денег.<br>
             </p>
@@ -123,14 +124,16 @@
               <div class="form__group">
                 <lable for="budget">Примерный бюджет</lable>
                 <select id="budget">
-                  <option>выберите вариант</option>
+                  <option>Выберите вариант</option>
                   <option value="10-30">10 000₽ – 30 000₽</option>
                   <option value="30-60">30 000₽ – 60 000₽</option>
                   <option value="60-100">60 000₽ – 100 000₽</option>
-                  <option value="100+">100 000₽</option>
+                  <option value="other">Другое</option>
                 </select> 
               </div>
-              <button type="submit" class="form__submit">Отправить заявку </button>
+              <button type="submit" class="form__submit">
+                Отправить заявку
+               </button>
            </form>
           </div>
       </section>
@@ -162,6 +165,8 @@
          <div class="footer__copyright">GreenCorp © 2021. </div>
   
         </footer>
-        <script src ="canvas.js"></script>
+        <script src ="js/canvas.js"></script>
+        <script src="js/animations.js"></script>
+
 </body>
 </html>
