@@ -13,12 +13,10 @@ class Bubble {
 
        this.init();
    }
-
    getCanvasSize() {
        this.canvasWidth = this.canvas.clientWidth;
        this.canvasHeight = this.canvas.clientHeight;
    }
-
    init() {
        this.color = COLORS[Math.floor(Math.random() * COLORS.length)];
        this.alpha = generateDecimalBetween(5, 10) / 10;
